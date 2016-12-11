@@ -274,4 +274,13 @@ return array (
       '@yii/faker' => $vendorDir . '/yiisoft/yii2-faker',
     ),
   ),
+  'macgyer/yii2-materializecss' => 
+  array (
+    'name' => 'macgyer/yii2-materializecss',
+    'version' => '1.0.9.0',
+    'alias' => 
+    array (
+      '@macgyer/yii2materializecss' => $vendorDir . '/macgyer/yii2-materializecss/src',
+    ),
+  ),
 );

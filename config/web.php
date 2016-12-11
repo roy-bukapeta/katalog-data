@@ -40,6 +40,14 @@ $config = [
 
     ],
     'components' => [
+        'view' => [
+            'class' => 'yii\web\View',
+            'theme' => [
+              'class' => 'yii\base\Theme',
+              'pathMap' => ['@app/views' => 'themes/material-default'],
+              'baseUrl'   => 'themes/material-default'
+            ]
+        ],
         'request' => [
             // !!! insert a secret key in the following (if it is empty) - this is required by cookie validation
             'cookieValidationKey' => 'hxlYtLgNeKKpDQKcr1mpRIaNhnCCH4JO',
@@ -107,8 +115,19 @@ if (YII_ENV_DEV) {
     ];
 
     $config['bootstrap'][] = 'gii';
+    // $config['modules']['gii'] = [
+    //     'class' => 'yii\gii\Module',
+    // ];
     $config['modules']['gii'] = [
         'class' => 'yii\gii\Module',
+        'generators' => [
+            'crud' => [
+                'class' => 'yii\gii\generators\crud\Generator',
+                'templates' => [ // setting materializecss templates
+                    'materializecss' => '@vendor/macgyer/yii2-materializecss/src/gii-templates/generators/crud/materializecss',
+                ]
+            ]
+        ],
     ];
 }
 

@@ -3,10 +3,14 @@
 /* @var $this \yii\web\View */
 /* @var $content string */
 
-use yii\helpers\Html;
-use yii\bootstrap\Nav;
-use yii\bootstrap\NavBar;
-use yii\widgets\Breadcrumbs;
+// use yii\helpers\Html;
+use macgyer\yii2materializecss\lib\Html;
+// use yii\bootstrap\Nav;
+// use yii\bootstrap\NavBar;
+// use yii\widgets\Breadcrumbs;
+use macgyer\yii2materializecss\widgets\Nav;
+use macgyer\yii2materializecss\widgets\NavBar;
+use macgyer\yii2materializecss\widgets\Breadcrumbs;
 use app\assets\AppAsset;
 
 AppAsset::register($this);
@@ -21,35 +25,37 @@ AppAsset::register($this);
     <title><?= Html::encode($this->title) ?></title>
     <?php $this->head() ?>
 </head>
+<style type="text/css">
+    .breadcrumb {
+        background-color: #ee6e73 !important;
+    }
+</style>
 <body>
 <?php $this->beginBody() ?>
 
 <div class="wrap">
     <?php
     NavBar::begin([
-        'brandLabel' => 'My Company',
-        'brandUrl' => Yii::$app->homeUrl,
+        'brandLabel' => 'Katalog Data',
         'options' => [
-            'class' => 'navbar-inverse navbar-fixed-top',
+            'class' => 'navbar-fixed-top',
+            'style' => 'padding: 0px 20px 0px 20px;'
         ],
     ]);
     echo Nav::widget([
         'options' => ['class' => 'navbar-nav navbar-right','innerContainerOptions' => ['class'=>'container-fluid']],
-            'encodeLabels' => false,
-            'items' => [
-                Yii::$app->user->isGuest ? ( "" ) : (
-                    ['label' => 'Dashboard', 'url' => ['/dashboard/index']]
-                ),
+        'encodeLabels' => false,
+        'items' => [
             ['label' => 'Home', 'url' => ['/site/index']],
-            ['label' => 'About', 'url' => ['/site/about']],
-            ['label' => 'Contact', 'url' => ['/site/contact']],
+            // ['label' => 'About', 'url' => ['/site/about']],
+            // ['label' => 'Contact', 'url' => ['/site/contact']],
+            ['label' => 'Dashboard', 'url' => ['/dashboard/index'], 'visible' => !Yii::$app->user->isGuest],
             Yii::$app->user->isGuest ?
             ['label' => 'Sign in', 'url' => ['/user/security/login']] :
             ['label' => 'Sign out (' . Yii::$app->user->identity->username . ')',
                 'url' => ['/user/security/logout'],
-                'linkOptions' => ['data-method' => 'post']],
-            
-
+                'linkOptions' => ['data-method' => 'post']
+            ],
         ],
     ]);
     NavBar::end();
@@ -58,16 +64,14 @@ AppAsset::register($this);
     <div class="container">
         <?= Breadcrumbs::widget([
             'links' => isset($this->params['breadcrumbs']) ? $this->params['breadcrumbs'] : [],
-        ]) ?>
+        ]) ?><br>
         <?= $content ?>
     </div>
 </div>
 
 <footer class="footer">
     <div class="container">
-        <p class="pull-left">&copy; My Company <?= date('Y') ?></p>
-
-        <p class="pull-right"><?= Yii::powered() ?></p>
+        <center><p>&copy; Katalog Data <?= date('Y') ?></p></center>
     </div>
 </footer>
 

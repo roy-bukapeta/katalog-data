@@ -709,66 +709,6 @@
         ]
     },
     {
-        "name": "dektrium/yii2-user",
-        "version": "dev-master",
-        "version_normalized": "9999999-dev",
-        "source": {
-            "type": "git",
-            "url": "https://github.com/dektrium/yii2-user.git",
-            "reference": "a908ab3652668c6f2755052098dac09a8c6de6f4"
-        },
-        "dist": {
-            "type": "zip",
-            "url": "https://api.github.com/repos/dektrium/yii2-user/zipball/a908ab3652668c6f2755052098dac09a8c6de6f4",
-            "reference": "a908ab3652668c6f2755052098dac09a8c6de6f4",
-            "shasum": ""
-        },
-        "require": {
-            "yiisoft/yii2": "^2.0.0",
-            "yiisoft/yii2-authclient": "^2.1.0",
-            "yiisoft/yii2-bootstrap": "^2.0.0",
-            "yiisoft/yii2-swiftmailer": "^2.0.0"
-        },
-        "require-dev": {
-            "codeception/specify": "^0.4.3",
-            "codeception/verify": "^0.3.1",
-            "yiisoft/yii2-codeception": "^2.0.0"
-        },
-        "time": "2016-09-22 15:04:36",
-        "type": "yii2-extension",
-        "extra": {
-            "bootstrap": "dektrium\\user\\Bootstrap",
-            "branch-alias": {
-                "dev-master": "0.9.x-dev",
-                "dev-develop": "1.0.x-dev"
-            }
-        },
-        "installation-source": "source",
-        "autoload": {
-            "psr-4": {
-                "dektrium\\user\\": ""
-            }
-        },
-        "notification-url": "https://packagist.org/downloads/",
-        "license": [
-            "MIT"
-        ],
-        "authors": [
-            {
-                "name": "Dmitry Erofeev",
-                "email": "dmeroff@gmail.com",
-                "homepage": "http://dmeroff.ru"
-            }
-        ],
-        "description": "Flexible user registration and authentication module for Yii2",
-        "keywords": [
-            "User management",
-            "dektrium",
-            "yii2",
-            "yii2-user"
-        ]
-    },
-    {
         "name": "mdmsoft/yii2-admin",
         "version": "2.7",
         "version_normalized": "2.7.0.0",
@@ -2356,6 +2296,190 @@
         "keywords": [
             "Fixture",
             "faker",
+            "yii2"
+        ]
+    },
+    {
+        "name": "dektrium/yii2-user",
+        "version": "dev-master",
+        "version_normalized": "9999999-dev",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/dektrium/yii2-user.git",
+            "reference": "a908ab3652668c6f2755052098dac09a8c6de6f4"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/dektrium/yii2-user/zipball/a908ab3652668c6f2755052098dac09a8c6de6f4",
+            "reference": "a908ab3652668c6f2755052098dac09a8c6de6f4",
+            "shasum": ""
+        },
+        "require": {
+            "yiisoft/yii2": "^2.0.0",
+            "yiisoft/yii2-authclient": "^2.1.0",
+            "yiisoft/yii2-bootstrap": "^2.0.0",
+            "yiisoft/yii2-swiftmailer": "^2.0.0"
+        },
+        "require-dev": {
+            "codeception/specify": "^0.4.3",
+            "codeception/verify": "^0.3.1",
+            "yiisoft/yii2-codeception": "^2.0.0"
+        },
+        "time": "2016-09-22 15:04:36",
+        "type": "yii2-extension",
+        "extra": {
+            "bootstrap": "dektrium\\user\\Bootstrap",
+            "branch-alias": {
+                "dev-master": "0.9.x-dev",
+                "dev-develop": "1.0.x-dev"
+            }
+        },
+        "installation-source": "source",
+        "autoload": {
+            "psr-4": {
+                "dektrium\\user\\": ""
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Dmitry Erofeev",
+                "email": "dmeroff@gmail.com",
+                "homepage": "http://dmeroff.ru"
+            }
+        ],
+        "description": "Flexible user registration and authentication module for Yii2",
+        "keywords": [
+            "User management",
+            "dektrium",
+            "yii2",
+            "yii2-user"
+        ]
+    },
+    {
+        "name": "bower-asset/materialize",
+        "version": "v0.97.6",
+        "version_normalized": "0.97.6.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/Dogfalo/materialize.git",
+            "reference": "793e5716040cb133041b55be75b1fae51debb9f3"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/Dogfalo/materialize/zipball/793e5716040cb133041b55be75b1fae51debb9f3",
+            "reference": "793e5716040cb133041b55be75b1fae51debb9f3",
+            "shasum": ""
+        },
+        "require": {
+            "bower-asset/jquery": ">=2.1.1"
+        },
+        "type": "bower-asset-library",
+        "extra": {
+            "bower-asset-main": [
+                "bin/materialize.css",
+                "bin/materialize.js",
+                "fonts/roboto/Roboto-Bold.ttf",
+                "fonts/roboto/Roboto-Bold.woff",
+                "fonts/roboto/Roboto-Bold.woff2",
+                "fonts/roboto/Roboto-Light.ttf",
+                "fonts/roboto/Roboto-Light.woff",
+                "fonts/roboto/Roboto-Light.woff2",
+                "fonts/roboto/Roboto-Medium.ttf",
+                "fonts/roboto/Roboto-Medium.woff",
+                "fonts/roboto/Roboto-Medium.woff2",
+                "fonts/roboto/Roboto-Regular.ttf",
+                "fonts/roboto/Roboto-Regular.woff",
+                "fonts/roboto/Roboto-Regular.woff2",
+                "fonts/roboto/Roboto-Thin.ttf",
+                "fonts/roboto/Roboto-Thin.woff",
+                "fonts/roboto/Roboto-Thin.woff2"
+            ],
+            "bower-asset-ignore": [
+                "jade/",
+                ".gitignore",
+                "CNAME",
+                "css/",
+                "bower.json",
+                "README.md",
+                "images/",
+                "js/jquery.timeago.js",
+                "js/init.js",
+                "js/prism.js",
+                "res/",
+                "sass/style.scss",
+                "sass/ghpages-materialize.scss",
+                "**/*.html",
+                "**/*.zip",
+                "**/*.txt",
+                "sitemap.xml",
+                "package.json",
+                "Gruntfile.js"
+            ]
+        },
+        "installation-source": "dist",
+        "description": "A modern responsive front-end framework based on Material Design",
+        "keywords": [
+            "css",
+            "design",
+            "framework",
+            "front-end",
+            "js",
+            "material",
+            "mobile-first",
+            "responsive",
+            "sass",
+            "ux"
+        ]
+    },
+    {
+        "name": "macgyer/yii2-materializecss",
+        "version": "1.0.9",
+        "version_normalized": "1.0.9.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/MacGyer/yii2-materializecss.git",
+            "reference": "dfeb2d522cf1d2e17be74d4ae04cb2a73ca9fdf3"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/MacGyer/yii2-materializecss/zipball/dfeb2d522cf1d2e17be74d4ae04cb2a73ca9fdf3",
+            "reference": "dfeb2d522cf1d2e17be74d4ae04cb2a73ca9fdf3",
+            "shasum": ""
+        },
+        "require": {
+            "bower-asset/materialize": "0.97.6",
+            "php": ">=5.4.0",
+            "yiisoft/yii2": "~2.0"
+        },
+        "time": "2016-09-01 21:01:08",
+        "type": "yii2-extension",
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "macgyer\\yii2materializecss\\": "src"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "BSD-3-Clause"
+        ],
+        "authors": [
+            {
+                "name": "Christoph Erdmann",
+                "homepage": "http://www.medienpol.de",
+                "role": "Developer"
+            }
+        ],
+        "description": "Materialize CSS implementation for Yii2",
+        "homepage": "http://macgyer.github.io/yii2-materializecss",
+        "keywords": [
+            "material design",
+            "materialize",
+            "widgets",
             "yii2"
         ]
     }

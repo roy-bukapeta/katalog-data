@@ -28,6 +28,7 @@ class ComposerStaticInita9b7fbb7a45b43ae37d16ec8a3185f15
         'm' => 
         array (
             'mdm\\admin\\' => 10,
+            'macgyer\\yii2materializecss\\' => 27,
         ),
         'k' => 
         array (
@@ -112,6 +113,10 @@ class ComposerStaticInita9b7fbb7a45b43ae37d16ec8a3185f15
         'mdm\\admin\\' => 
         array (
             0 => __DIR__ . '/..' . '/mdmsoft/yii2-admin',
+        ),
+        'macgyer\\yii2materializecss\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/macgyer/yii2-materializecss/src',
         ),
         'kartik\\widgets\\' => 
         array (
